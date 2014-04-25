@@ -1,0 +1,17 @@
+<h2> Add the Details of You Event Below</h2>
+
+<table>
+  <% @event.each do |details| %>
+    <tr>
+      <td>Event Name: <%= details.event_name%></td>
+      <td>Event Type: <%= details.event_type%></td>
+      <td>Date: <%= details.date%></td>
+      <td>Time: <%= details.time%></td>
+  <% end%>
+</table>
+
+  <form action="/events/new" method="post">
+    <input type="text" name="name"/>
+    <input type="submit" value="Add"/>
+  </form>
+
