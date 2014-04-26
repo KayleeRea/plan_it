@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   root 'events#index'
 
   get '/events', to: 'events#index'
-  get '/events', to:'events#show'
-  post '/events', to: 'events#create'
+  get '/events/new', to:'events#new'
+  post '/events/new', to: 'events#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
