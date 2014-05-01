@@ -1,12 +1,14 @@
 class EventsController < ApplicationController
   def index
-
+    @events = Event.all
   end
   def new
-    @event = Event.all
+    @event= Event.new
   end
+
   def create
-    Event.create(event_name: params[:event_name], event_type: params[:event_type], date: params[:date], time: params[:time])
-    redirect_to '/events/new'
+    @event= Event.create(event_name: params[:event_name], event_type: params[:event_type], date: params[:date], time: params[:time])
+    redirect_to events_path(@event)
   end
+
 end

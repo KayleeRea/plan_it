@@ -1,23 +1,37 @@
-<h2> Add the Details of You Event Below</h2>
+<h1 class="adding"> Add the Details of Your Event Below</h1>
 
- <form action="/events/new" method="post">
-   Event Name:<input type="text" name="event_name"/>
-   Type of Event:<input type="text" name="event_type"/>
-   Date of Event: <input type="text" name="date"/>
-   Time of Event:<input type="text" name="time"/>
+<!--<h1>Add The Details of your Event Below</h1>
+<table>
+  < %= form_for @event, url: {action: "create"} do |f| %>
+    <tr>
+      <td>< %= f.label :event_name %></td>
+      <td id="text_field">< %= f.text_area :url %></td>
+    </tr>
+    <tr>
+      <td> < %= f.select :type_of_event, options_for_select(%w[Birthday surprise]) %></td>
+      <td id="text_field">< %= f.text_area :description %></td>
+    </tr>
+    <tr>
+      <td>< %= f.label :rating %></td>
+      <td id="text_field">< %= f.number_field(:rating, in: 1.0..5.0, step: 1) %></td>
+    </tr>
+    <tr>
+      <td id="text_field">
+        < %= f.submit(value = 'Create Picture') %>
+  < % end %>
+  </td>
+  </tr>
+</table>-->
+
+<form action="/events" method="post">
+   <p class="form">Event Name:<input type="text" name="event_name"/>
+   Type of Event:<input type="text" name="event_type"/></p>
+   <p class="form"> of Event: <input type="text" name="date"/>
+   Time of Event:<input type="text" name="time"/></p>
     <input type="submit" value="Add"/>
   </form>
 
-<table>
-  <% @event.each do |details| %>
-    <tr>
-      <td>Event Name: <%= details.event_name%></td>
-      <td>Event Type: <%= details.event_type%></td>
-      <td>Date: <%= details.date%></td>
-      <td>Time: <%= details.time%></td>
-    </tr>
-  <% end%>
-</table>
+
 
 
 

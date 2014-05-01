@@ -1,12 +1,12 @@
+<h1 class="start_planning"><%= link_to 'Start Planning!', new_event_path %></h1>
 
-<h2>Planning your event or party has never been easier with Plan It!</h2>
-<h3>Manage your event seamlessly from start to finish.</h3>
-<h4>Features Include</h4>
-<ul>
-  <li>Structured outlines of the planning process; whether it's an elaborate birthday party or a casual potluck</li>
-  <li>Checklists to ensure your event is fail proof</li>
-  <li>Automated reminder texts or emails to RSVPed guests</li>
-</ul>
-
-<a href="/events/new">Add Event</a>
-
+<table>
+  <% @events.each do |details| %>
+    <tr>
+      <td class="event_list">Event Name: <%= details.event_name %></td>
+      <td class="event_list">Event Type: <%= details.event_type %></td>
+      <td class="event_list">Date: <%=details.date %></td>
+      <td class="event_list">Time: <%=details.time %></td>
+    </tr>
+  <% end %>
+</table>
