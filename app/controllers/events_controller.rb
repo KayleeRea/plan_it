@@ -9,7 +9,7 @@ class EventsController < ApplicationController
 
   def create
     @event= Event.create(event_name: params[:event][:event_name], event_type: params[:event][:event_type], date: params[:event][:date], time: params[:event][:time])
-    redirect_to events_path(@event)
+    redirect_to events_path
   end
 
   def show
@@ -23,6 +23,11 @@ class EventsController < ApplicationController
   def update
     @event = Event.find(params[:id])
     @event.update(event_name: params[:event][:event_name], event_type: params[:event][:event_type], date: params[:event][:date], time: params[:event][:time])
-    redirect_to events_path(@event)
+    redirect_to events_path
+  end
+
+  def destroy
+    @event = Event.find(params[:id]).destroy
+    redirect_to events_path
   end
 end

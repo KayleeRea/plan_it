@@ -9,7 +9,7 @@
       <td class="event_list">Time: <%=details.time %></td>
     </tr>
     <tr>
-      <td><%= link_to "Edit Event", edit_event_path(details.id) %></td>
+      <td><%= link_to "Edit Event", edit_event_path(details) %> &nbsp; <%= link_to "Delete Event", details, method: :delete %></td>
     </tr>
   <% end %>
 </table>
