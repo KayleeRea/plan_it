@@ -1,4 +1,4 @@
-<h1 class="start_planning"><%= link_to 'Start Planning!', new_event_path %></h1>
+<h1 class="start_planning"><%= link_to "Add Your Event Now", new_event_path %></h1>
 
 <table>
   <% @events.each do |details| %>
@@ -7,6 +7,9 @@
       <td class="event_list">Event Type: <%= details.event_type %></td>
       <td class="event_list">Date: <%=details.date %></td>
       <td class="event_list">Time: <%=details.time %></td>
+    </tr>
+    <tr>
+      <td><%= link_to "Edit Event", edit_event_path(details.id) %></td>
     </tr>
   <% end %>
 </table>
