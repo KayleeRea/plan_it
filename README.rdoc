@@ -5,3 +5,6 @@ http://plan-it-staging.herokuapp.com/
 
 ## GitHub
 https://github.com/KayleeRea/plan_it
+
+## Pivitol Tracker URL
+https://www.pivotaltracker.com/n/projects/1071984
