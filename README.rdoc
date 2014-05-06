@@ -8,3 +8,6 @@ https://github.com/KayleeRea/plan_it
 
 ## Pivitol Tracker URL
 https://www.pivotaltracker.com/n/projects/1071984
+
+## Code Climate URL
+https://codeclimate.com/github/KayleeRea/plan_it
