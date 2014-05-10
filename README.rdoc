@@ -1,5 +1,18 @@
 == README
 
+== Plan It
+
+=== Plan it takes the stress and frustration out of planning your own party, event or gathering. Plan It minimizes the logistics and cordination of the event planning process.
+
+== Please follow the steps below to get this site set up for local development.
+
+Step 1: Fork and Clone this repository to your local machine.
+Run these commands in your terminal -
+Step 2: bundle
+Step 3: rake db:create
+Step 4: bin/rake db:migrate
+Step 5: bin/rake spec
+
 === Heroku Staging URL
 http://plan-it-staging.herokuapp.com/
 
@@ -9,5 +22,4 @@ https://github.com/KayleeRea/plan_it
 === Pivitol Tracker URL
 https://www.pivotaltracker.com/n/projects/1071984
 
-=== Code Climate URL
-https://codeclimate.com/github/KayleeRea/plan_it
+{<img src="https://codeclimate.com/github/KayleeRea/plan_it.png" />}[https://codeclimate.com/github/KayleeRea/plan_it]
