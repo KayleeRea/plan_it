@@ -2,7 +2,7 @@
 
 == Plan It
 
-=== Plan it takes the stress and frustration out of planning your own party, event or gathering. Plan It minimizes the logistics and cordination of the event planning process.
+Plan it takes the stress and frustration out of planning your own party, event or gathering. Plan It minimizes the logistics and cordination of the event planning process.
 
 == Please follow the steps below to get this site set up for local development.
 
