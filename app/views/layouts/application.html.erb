@@ -5,16 +5,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<% if user_signed_in? %>
+
+<h1 id="signed_in"><% if user_signed_in? %>
   Hi, <%= current_user.full_name %>!
   <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 <% else %>
   Do I know you?
-  <%= link_to "Sign in", new_user_session_path %>
+  <%= link_to "Sign in", new_user_session_path %> or <%= link_to "Register", new_user_registration_path %>
 <% end%>
+  </h1>
+</div>
 <%= yield %>
+
 
 </body>
 </html>

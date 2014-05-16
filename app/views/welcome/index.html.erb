@@ -37,13 +37,13 @@ And a few tips on building your CSS file:
   <section class="intro" id="zen-intro">
     <header role="banner">
       <h1>It's Not rocket science, but it also 'aint easy</h1>
-      <h2> Plan It </h2>
+      <h2 id ="welcome_page"> Plan It </h2>
       <h1> The hassle and stress taken out of planning your own party or event</h1>
 
     </header>
     <div class="summary" id="zen-summary" role="article">
 
-      <p>Never </p>
+      <img class="balloons" src="<%= asset_url("balloons.png") %>"/>
       <p></p>
     </div>
     <div class="preamble" id="zen-preamble" role="article">
@@ -57,17 +57,17 @@ And a few tips on building your CSS file:
         <li>Automated reminder texts or emails to RSVPed guests</li>
       </ul>
 
-      <h1> <%=link_to 'Start Planning', events_path %> </h1>
+
     </div>
   </section>
   <div class="main supporting" id="zen-supporting" role="main">
     <div class="explanation" id="zen-explanation" role="article">
-      <h3></h3>
-      <p><img src ="http://www.womansday.com/cm/womansday/images/WM/messy-food-table-mdn.jpg"></p>
+      <p><img class="table"src ="http://www.womansday.com/cm/womansday/images/WM/messy-food-table-mdn.jpg"></p>
     </div>
     <div class="participation" id="zen-participation" role="article">
-
     </div>
+      <p> <img class ="party_table" src ="http://30.media.tumblr.com/tumblr_l6603rgtoF1qakcxko1_500.jpg"></p>
+
 
     <footer>
 
@@ -76,7 +76,8 @@ And a few tips on building your CSS file:
   <aside class="sidebar" role="complementary">
     <div class="wrapper">
       <div class="design-selection" id="design-selection">
-        <h3 class="select">Login:</h3>
+
+        <h1> <%=link_to 'Start Planning', events_path %> </h1>
         <nav role="navigation">
         </nav>
       </div>

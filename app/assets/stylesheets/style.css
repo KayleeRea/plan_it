@@ -99,17 +99,18 @@ div.page-wrapper {
     z-index : 2;
 }
 section.intro {
-    padding : 5%;
+    padding : 2%;
 }
 section.intro div.summary {
     color : #fff;
-    padding : 15% 0;
+    padding : 0;
+    margin: auto;
 }
 section.intro div.preamble {
     background : rgba(255, 255, 255, 0.9);
     color : #333;
     margin-left : -30%;
-    padding : 5% 5% 5% 30%;
+    padding : 0% 5% 5% 30%;
 }
 div.main {
     padding : 5%;
@@ -139,7 +140,7 @@ footer a {
 }
 div.explanation {
     color : #fff;
-    padding : 5%;
+    padding-left : 5%;
 }
 div.participation {
     background : rgba(234, 46, 73, 0.9);
@@ -249,3 +250,32 @@ div.requirements {
     padding-right: 50%;
 }
 
+#signed_in {
+    font-size: 20px;
+}
+
+#welcome_page{
+    text-align: center;
+    font-size: 7em;
+}
+
+.balloons{
+    padding-left: 1.75em;
+}
+
+.party_table{
+   padding : 3%
+}
+
+.table{
+    padding-left: 4em;
+}
+
+.devise{
+   font-family: 'Coming Soon', cursive;
+    font-weight: 900;
+    font-stretch: expanded;
+    padding-left: 7em;
+    padding-bottom: 7em;
+    padding-top: 2em;
+}
