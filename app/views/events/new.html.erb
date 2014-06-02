@@ -1,7 +1,7 @@
 
 <div>
-  <h1 class="adding"> Add the Details of Your Event Below</h1>
-  <%= form_for @event do |f| %>
+  <h1> Add the Details of Your Event Below</h1>
+  <div class="devise"><%= form_for @event do |f| %>
     <table>
       <tr>
         <td><%= f.label :event_name %></td>
@@ -21,9 +21,11 @@
       </tr>
       <tr>
         <td id="update">
+
           <%= f.submit(value = 'Add') %>
         </td>
       </tr>
     </table>
   <% end %>
 </div>
+  </div>

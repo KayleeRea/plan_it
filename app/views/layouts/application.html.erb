@@ -2,25 +2,31 @@
 <html>
 <head>
   <title>PlanIt</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
-</head>
-<body>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
-<h1 id="signed_in"><% if user_signed_in? %>
-  Hi, <%= current_user.full_name %>!
-  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-<% else %>
-  Do I know you?
-  <%= link_to "Sign in", new_user_session_path %> or <%= link_to "Register", new_user_registration_path %>
-<% end%>
-  </h1>
+<header>
+  <h4 class="links">
+   <%= link_to "Plan It Home", root_path %></h4>
+
+<h1 id="signed_in">
+  <% if user_signed_in? %>
+    Hi, <%= current_user.full_name %>!
+    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    Do I know you?
+    <%= link_to "Sign in", new_user_session_path %> or <%= link_to "Register", new_user_registration_path %>
+  <% end %>
+</h1>
+</header>
+<body>
 </div>
 <%= yield %>
-
-
+</div>
 </body>
 </html>
 

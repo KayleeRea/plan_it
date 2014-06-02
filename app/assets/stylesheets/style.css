@@ -33,13 +33,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight : normal;
 }
 h1 {
-    background : #ea2e49;
+    font-size: 1em;
+    background : #CD333B;
     color : #fff;
     display : inline-block;
-    margin-bottom : 1em;
-    padding : 0.5em 1em;
+    margin-bottom : .5em;
+    padding : 0.5em;
 }
 h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
     color : #fff;
     font-weight : 900;
     font-size : 6em;
@@ -62,7 +64,7 @@ a {
 a:hover {
     border-color : #ea2e49;
 }
-section.intro div.summary p a, div.explanation p a, div.participation p a {
+section.intro div.summary p a, div.participation p a {
     color : #fff;
 }
 div.participation p a:hover {
@@ -76,13 +78,12 @@ p, li {
 }
 h1, section.intro div.summary p, div.requirements p:last-child {
     font-weight : 300;
-    letter-spacing : 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
     text-transform : uppercase;
 }
 section.intro div.summary p:last-child, div.requirements p:last-child {
     border-top : 1px solid #ea2e49;
-    margin-top : 1em;
-    padding-top : 1.5em;
 }
 em, strong {
     font-style : normal;
@@ -90,16 +91,15 @@ em, strong {
 }
 html {
     background : #daede2;
-    padding : 5%;
+    padding : 2%;
 }
 body {
-    background : #77c4d3;
+    background : #B7ECD0;
 }
 div.page-wrapper {
     z-index : 2;
 }
 section.intro {
-    padding : 2%;
 }
 section.intro div.summary {
     color : #fff;
@@ -116,14 +116,14 @@ div.main {
     padding : 5%;
 }
 aside.sidebar {
-    background : rgba(246, 247, 146, 0.9);
-    padding : 5%;
+    background : #009E8E;
+    padding: 3% 4% 2% 5%
 }
 aside.sidebar ul {
     padding : 0.5em 0 2em 0;
 }
 aside.sidebar ul li {
-    color : rgba(0, 0, 0, 0.4);
+    color : #21263A;
     list-style : none;
     margin : 0;
     padding : 0 0 0.825em 0;
@@ -244,6 +244,7 @@ div.requirements {
 }
 .event_list {
     padding: 4em;
+    font-family: 'Coming Soon', cursive;
 }
 
 .start_planning {
@@ -252,30 +253,58 @@ div.requirements {
 
 #signed_in {
     font-size: 20px;
+    float: right;
 }
 
 #welcome_page{
+    font-family: 'Amatic SC', cursive;
     text-align: center;
-    font-size: 7em;
+    font-size: 10em;
 }
 
 .balloons{
-    padding-left: 1.75em;
+  float: right;
 }
 
 .party_table{
-   padding : 3%
-}
-
-.table{
-    padding-left: 4em;
+   padding-top: 3%
 }
 
 .devise{
-   font-family: 'Coming Soon', cursive;
-    font-weight: 900;
-    font-stretch: expanded;
-    padding-left: 7em;
-    padding-bottom: 7em;
-    padding-top: 2em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    font-weight: 900px;
+    font-stretch: ultra-expanded;
+    padding-left: 2em;
+    padding-bottom: 4em;
+    padding-top: 1em;
+    text-transform: uppercase;
+}
+
+#party {
+    float: right;
+}
+
+.right {
+    float: right;
+}
+
+.box {
+    width: 40%;
+    height: 20%;
+    background-color: lightgrey;
+}
+
+.devise div input {
+    width: 85%;
+}
+
+table {
+    width: 50%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+}
+
+.links {
+    font-size: .75em;
 }

@@ -1,15 +1,24 @@
 <h1 class="start_planning"><%= link_to "Add Your Event Now", new_event_path %></h1>
 
-<table>
+<table class="Events">
   <% @events.each do |details| %>
     <tr>
-      <td class="event_list">Event Name: <%= details.event_name %></td>
-      <td class="event_list">Event Type: <%= details.event_type %></td>
-      <td class="event_list">Date: <%=details.date %></td>
-      <td class="event_list">Time: <%=details.time %></td>
+      <td>What's Your Party?</td>
+      <td><%= details.event_name %></td>
     </tr>
     <tr>
-      <td><%= link_to "Edit Event", edit_event_path(details) %> &nbsp; <%= link_to "Delete Event", details, method: :delete %></td>
+      <td>What's the Occasion?</td>
+      <td><%= details.event_type %></td>
+    </tr>
+    <tr><td>When's the Party?</td>
+    <td><%= details.date %></td>
+      </tr>
+    <tr><td>Time of the Party</td>
+    <td><%= details.time %></td>
+    </tr>
+    <tr>
+      <td><h1 class="links"> <%= link_to "Edit Event", edit_event_path(details) %></h1>    <h1 class="links"><%= link_to "Delete Event", details, method: :delete %></h1></td>
     </tr>
   <% end %>
 </table>
+
